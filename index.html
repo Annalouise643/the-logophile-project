@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)https://8080-ace23787-a219-42d6-b0f0-32b8fcf602d5.europe-west1.cloudshell.dev/Week3projectTheLogophile.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Logophile</title>
+    <style>
+        
+        h1 {
+            margin-bottom: 0;
+            text-align: center;
+        }
+        h2 {
+            font-size: smaller;
+            font-weight: lighter;
+            text-align: center;
+        }
+        h3 {
+            font-weight:lighter;
+            margin-top: 0;
+            text-align: center;
+            }
+       
+         p {
+            background-color: rgba(33, 95, 125, 0.1);
+            border: 1px solid  rgba(33, 95, 125, 0.4);
+            border-radius: 5px;
+            line-height: 1.5;
+            margin: 10px 150px 10px 150px; 
+            text-align: center;
+        }
+        button {
+            background-color: rgb(33, 95, 125);
+            border: 1px solid  rgba(33, 95, 125, 0.4);
+            border-radius: 15px;
+            box-shadow:2px 2px 2px rgba(33, 95, 125, 0.5);
+            color: white;
+            display: block;
+            margin: 0 auto 10px;
+            padding: 10px;
+            transition: all 200ms ease;
+        }
+        button:hover {
+            background-color:rgb(124, 205, 241);
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            }
+        hr {
+            margin: 20px 200px;
+        }
+       
+    
+  .title {
+background-color: rgba(33, 95, 125, 0.2);
+border: 1px solid  rgba(33, 95, 125, 0.4);
+border-radius: 5px;
+margin: 10px 150px;
+  }
+        .greek {
+            color: rgb(200, 79, 77);  
+        }
+        .image-swap img:nth-child(1) {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right:0;
+            transition: all 200ms ease;
+        } 
+        .image-swap img:nth-child(1):hover {
+            opacity: 0;
+        } 
+        .signature {
+            background: none;
+            border: none;
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+    <span class="text">
+    <div class="title">
+    <h1>
+    The Logophile
+    </h1>
+    <h2>
+      <strong> 
+          <em>
+            noun
+        </em> 
+        </strong>
+        (law-guh-fahyl)
+    </h2>
+    <h3>
+        a lover of words
+    </h3>
+</div>
+<p>
+    A page to celebrate literature and art. <br>
+    The word logophile comes from the ancient greek words <em><span class="greek">logos</span></em>, which means 'word' and <em><span class="greek">philos</span></em>, meaning 'love'.
+</p>
+<hr>
+<span>
+<button>
+    See the transformation!
+</button>
+<div class="image-swap">
+<img src="./Week3FinalProjectTheLogophile_files/Humument_Before.jpg" class="top-img">
+<img src="./Week3FinalProjectTheLogophile_files/Humument_After.jpg">
+</div>
+<p>
+    <em>Even the piano listened with admiration.</em> 
+    <br>
+    Tom Phillips,
+    <a href="http://www.tomphillips.co.uk/humument" target="_blank">
+    'A Humument'
+    </a> 
+    <br>
+</p>
+<p>
+Artist Tom Phillips bought <em>A Human Document</em> by W.H.Mallock at Austin's Furniture Repository on Peckham Rye in 1966. Since then, Phillips has meticuously illustrated every page, obscuring all but a few choice words. The result is a catalogue of individual artworks, each a fascinating mixure of visual art and poetry. The words Phillips leaves blank are bright and bold against the painted backgrounds. Some are playful, some are poignant and some are just gorgeous. 
+</p>
+<hr>
+<p class="signature">
+    Coded by Anna Bray
+</p>
+<script>
+  function seeOriginal() {
+      let name = prompt("What is your name?");
+      let answer = prompt("Hi " + name + ", do you love literature and art - Yes/No?");
+    answer = answer.toLowerCase();
+        if (answer === "yes") {
+            alert("Great! 🙌 Hover your mouse over the image below to see the transformation. 👩🏼‍🎨");
+        } else {
+            alert("This might change your mind! Hover your mouse over the image below to see the transformation. 👩🏼‍🎨");
+             }
+  }
+    let originalButton = document.querySelector("button");
+originalButton.addEventListener("click", seeOriginal);
+
+</script>
+
+</span></span></body></html>
